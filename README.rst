@@ -114,6 +114,19 @@ Usage::
     </executions>
   </plugin>
 
+Integration with Gradle
+-----------------------
+
+There is a Gradle plugin to run Scalariform contributed by `Jeroen van Erp`_.
+
+.. _Jeroen van Erp: https://github.com/hierynomus/scalariform-gradle-plugin
+
+Usage::
+
+  apply plugin: "scalariform"
+  ...
+  formatScala
+
 Integration with TextMate
 -------------------------
 
