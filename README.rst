@@ -117,15 +117,27 @@ Usage::
 Integration with Gradle
 -----------------------
 
-There is a Gradle plugin to run Scalariform contributed by `Jeroen van Erp`_.
+There is a `Gradle plugin`_ to run Scalariform contributed by Jeroen van Erp.
 
-.. _Jeroen van Erp: https://github.com/hierynomus/scalariform-gradle-plugin
+.. _Gradle plugin: https://github.com/hierynomus/scalariform-gradle-plugin
 
-Usage::
+Usage (Gradle 2.1 and above)::
 
-  apply plugin: "scalariform"
-  ...
-  formatScala
+  plugins {
+    id "com.github.hierynomus.scalariform" version "0.1.0"
+  }
+
+  // optionally, configure Scalariform settings
+  scalariform {
+    alignParameters = true
+    alignSingleLineCaseStatements = true
+  }
+  
+  formatAllScala
+
+See `the documentation`_ for further usage examples.
+
+.. _the documentations: https://github.com/hierynomus/scalariform-gradle-plugin/blob/master/README.adoc
 
 Integration with TextMate
 -------------------------
