@@ -137,7 +137,7 @@ Usage (Gradle 2.1 and above)::
 
 See `the documentation`_ for further usage examples.
 
-.. _the documentations: https://github.com/hierynomus/scalariform-gradle-plugin/blob/master/README.adoc
+.. _the documentation: https://github.com/hierynomus/scalariform-gradle-plugin/blob/master/README.adoc
 
 Integration with TextMate
 -------------------------
